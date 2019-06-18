@@ -22,16 +22,16 @@ const BriefAboutInsert = () => (
         <h3>Brief About</h3>
         <p>Hi! I'm Alex. I graduated from UC Berkeley with a B.S. in EECS and a B.A. in Music. I work as a Software Engineer at <a href="https://www.youtube.com/">YouTube</a>. I enjoy travel, playing violin, and looking at art.</p>
 
-        <Link to="/about/" class="button large">Read More</Link>
+        <Link to="/about/" className="button large">Read More</Link>
       </section>
       <section id="footer">
-        <ul class="icons">
+        <ul className="icons">
           <li>LinkedIn</li>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alex.krentsel" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alex.krentsel" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
           <li>Github</li>
-          <li><a target="_blank" rel="noopener noreferrer" href="mailto:alex@krentsel.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="mailto:alex@krentsel.com" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
         </ul>
-        <p class="copyright">&copy; Alex Krentsel 2019. Design based on <a href="http://html5up.net">HTML5 UP</a> and <a href="https://mldangelo.com/">https://mldangelo.com/</a>.</p>
+        <p className="copyright">&copy; Alex Krentsel 2019. Design based on <a href="http://html5up.net">HTML5 UP</a> and <a href="https://mldangelo.com/">https://mldangelo.com/</a>.</p>
       </section>
 
   </section>

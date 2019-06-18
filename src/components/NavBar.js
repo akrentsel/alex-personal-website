@@ -1,10 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => (
     <header id="header">
       <h1><Link to="/">Alex Krentsel</Link></h1>
-      <nav class="links">
+      <nav className="links">
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Projects = () => (
-    <article class="post">
+    <article className="post">
       <h2> Projects Under Construction </h2>
     </article>
 );

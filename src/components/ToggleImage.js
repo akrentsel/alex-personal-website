@@ -37,7 +37,7 @@ class ToggleImage extends React.Component {
   // TODO(akrentsel): Move onClick and onMouseOver down to img.
   render() {
     return (
-      <div class="logo" onClick={this.handleClick} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
+      <div className="logo" onClick={this.handleClick} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
         <img src={this.state.image} />
       </div>
     );
