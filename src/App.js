@@ -15,10 +15,11 @@ function AppRouter() {
       <div id="wrapper">
         <Route path="/" component={NavBar} />
         <div id="main">
-          <Route path="/about/" component={About} />
-          <Route path="/music/" component={Music} />
-          <Route path="/projects/" component={Projects} />
-          <Route path="/contact/" component={Contact} />
+          <Route exact path="/" component={About} />
+          <Route path="/about" component={About} />
+          <Route path="/music" component={Music} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/contact" component={Contact} />
         </div>
         <Route path="/" component={BriefAboutInsert} />
       </div>

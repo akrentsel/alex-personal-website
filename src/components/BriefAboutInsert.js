@@ -8,19 +8,18 @@ const BriefAboutInsert = () => (
         <a href="#" class="logo"><img src={ProfilePic} alt="" /></a>
         <header>
           <h2>Alex Krentsel</h2>
-          <p>Cal Grad and Software Engineer @ Google</p>
+          <p><a target="_blank" rel="noopener noreferrer" href="mailto:alex@krentsel.com">alex@krentsel.com</a></p>
         </header>
       </section>
-
+      <section>
+        <p>Testing 123</p>
+      </section>
       <section id="footer">
         <ul class="icons">
-          <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-          <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-          <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-          <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
-          <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alex.krentsel" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="mailto:alex@krentsel.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
-        <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+        <p class="copyright">&copy; Alex Krentsel 2019. Tweaked Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
       </section>
 
   </section>
@@ -28,6 +27,10 @@ const BriefAboutInsert = () => (
 );
 
 export default BriefAboutInsert;
+
+// <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+// <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+// <li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
 
 
 // Removed from this sidebar.

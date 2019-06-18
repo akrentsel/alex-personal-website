@@ -3417,7 +3417,7 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 		overflow: hidden;
 		position: relative;
-		width: 4em;
+		/* width: 4em; */
 	}
 
 		#intro .logo:before {
@@ -3436,17 +3436,18 @@ input, select, textarea {
 
 		#intro .logo img {
 			display: block;
-			margin-left: -0.25em;
-			width: 4.5em;
+			/* margin-left: -0.25em; */
+			width: 11em;
+			border-radius: 50%;
 		}
 
 	#intro header h2 {
-		font-size: 2em;
+		font-size: 1.6em;
 		font-weight: 900;
 	}
 
 	#intro header p {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 
 	@media screen and (max-width: 1280px) {
@@ -3457,11 +3458,11 @@ input, select, textarea {
 		}
 
 			#intro header h2 {
-				font-size: 2em;
+				font-size: 1.6em;
 			}
 
 			#intro header p {
-				font-size: 0.7em;
+				font-size: 0.9em;
 			}
 
 	}
