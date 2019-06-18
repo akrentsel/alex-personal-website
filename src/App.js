@@ -7,6 +7,7 @@ import About from './components/content/About.js';
 import Music from './components/content/Music.js';
 import Projects from './components/content/Projects.js';
 import Contact from './components/content/Contact.js';
+import Welcome from './components/content/Welcome.js';
 import BriefAboutInsert from './components/BriefAboutInsert.js';
 
 function AppRouter() {
@@ -15,7 +16,7 @@ function AppRouter() {
       <div id="wrapper">
         <Route path="/" component={NavBar} />
         <div id="main">
-          <Route exact path="/" component={About} />
+          <Route exact path="/" component={Welcome} />
           <Route path="/about" component={About} />
           <Route path="/music" component={Music} />
           <Route path="/projects" component={Projects} />
