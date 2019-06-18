@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/alex-personal-website/static/css/main.c3baa70f.chunk.css",
-    "main.js": "/alex-personal-website/static/js/main.0bb8198e.chunk.js",
-    "main.js.map": "/alex-personal-website/static/js/main.0bb8198e.chunk.js.map",
-    "runtime~main.js": "/alex-personal-website/static/js/runtime~main.a519a3f0.js",
-    "runtime~main.js.map": "/alex-personal-website/static/js/runtime~main.a519a3f0.js.map",
-    "static/js/2.672c19db.chunk.js": "/alex-personal-website/static/js/2.672c19db.chunk.js",
-    "static/js/2.672c19db.chunk.js.map": "/alex-personal-website/static/js/2.672c19db.chunk.js.map",
-    "index.html": "/alex-personal-website/index.html",
-    "precache-manifest.5730b5a69d5f4ba7abd433d8066ccda9.js": "/alex-personal-website/precache-manifest.5730b5a69d5f4ba7abd433d8066ccda9.js",
-    "service-worker.js": "/alex-personal-website/service-worker.js",
-    "static/css/main.c3baa70f.chunk.css.map": "/alex-personal-website/static/css/main.c3baa70f.chunk.css.map",
-    "static/media/alex-nature.jpg": "/alex-personal-website/static/media/alex-nature.96add150.jpg",
-    "static/media/alex-normal.jpg": "/alex-personal-website/static/media/alex-normal.9f8e47a3.jpg",
-    "static/media/alex-silly.jpg": "/alex-personal-website/static/media/alex-silly.6db494f0.jpg",
-    "static/media/main.css": "/alex-personal-website/static/media/fa-solid-900.ef3df984.eot"
+    "main.css": "/static/css/main.76dadedf.chunk.css",
+    "main.js": "/static/js/main.6e735549.chunk.js",
+    "main.js.map": "/static/js/main.6e735549.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.672c19db.chunk.js": "/static/js/2.672c19db.chunk.js",
+    "static/js/2.672c19db.chunk.js.map": "/static/js/2.672c19db.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8315fd8a7c7cfe1e2a5d9c181c7a01c0.js": "/precache-manifest.8315fd8a7c7cfe1e2a5d9c181c7a01c0.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.76dadedf.chunk.css.map": "/static/css/main.76dadedf.chunk.css.map",
+    "static/media/alex-nature.jpg": "/static/media/alex-nature.96add150.jpg",
+    "static/media/alex-normal.jpg": "/static/media/alex-normal.9f8e47a3.jpg",
+    "static/media/alex-silly.jpg": "/static/media/alex-silly.6db494f0.jpg",
+    "static/media/main.css": "/static/media/fa-solid-900.ef3df984.eot"
   }
 }
