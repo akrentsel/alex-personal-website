@@ -1,25 +1,37 @@
 import React from 'react';
 
-import ProfilePic from '../AlexProfilePic.jpg';
+import NormalPic from '../alex-normal.jpg';
+import NaturePic from '../alex-nature.jpg';
+import SillyPic from '../alex-silly.jpg';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+import ToggleImage from './ToggleImage.js';
+
+// TODO(akrentsel): Make the Read More button scroll to the top!
 
 const BriefAboutInsert = () => (
   <section id="sidebar">
       <section id="intro">
-        <a href="#" class="logo"><img src={ProfilePic} alt="" /></a>
+        <ToggleImage defaultImage={NormalPic} clickedImage={SillyPic} mouseOverImage={NaturePic}/>
         <header>
           <h2>Alex Krentsel</h2>
           <p><a target="_blank" rel="noopener noreferrer" href="mailto:alex@krentsel.com">alex@krentsel.com</a></p>
         </header>
       </section>
       <section>
-        <p>Testing 123</p>
+        <h3>Brief About</h3>
+        <p>Hi! I'm Alex. I graduated from UC Berkeley with a B.S. in EECS and a B.A. in Music. I work as a Software Engineer at <a href="https://www.youtube.com/">YouTube</a>. I enjoy travel, playing violin, and looking at art.</p>
+
+        <Link to="/about/" class="button large">Read More</Link>
       </section>
       <section id="footer">
         <ul class="icons">
+          <li>LinkedIn</li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alex.krentsel" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+          <li>Github</li>
           <li><a target="_blank" rel="noopener noreferrer" href="mailto:alex@krentsel.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
-        <p class="copyright">&copy; Alex Krentsel 2019. Tweaked Design: <a href="http://html5up.net">HTML5 UP</a>.</p>
+        <p class="copyright">&copy; Alex Krentsel 2019. Design based on <a href="http://html5up.net">HTML5 UP</a> and <a href="https://mldangelo.com/">https://mldangelo.com/</a>.</p>
       </section>
 
   </section>
