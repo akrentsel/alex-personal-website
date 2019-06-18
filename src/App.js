@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import './assets/css/main.css';
 
 import NavBar from './components/NavBar.js';
 import About from './components/content/About.js';
@@ -12,9 +13,9 @@ function AppRouter() {
   return (
     <div>
     <Router>
-      <div>
-        <Route path="/" component={NavBar} />
-        <Route path="/" component={BriefAboutInsert} />
+      <Route path="/" component={NavBar} />
+      <Route path="/" component={BriefAboutInsert} />
+      <div id="main">
         <Route path="/about/" component={About} />
         <Route path="/music/" component={Music} />
         <Route path="/projects/" component={Projects} />
