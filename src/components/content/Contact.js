@@ -1,7 +1,9 @@
 import React from "react";
 
 const Contact = () => (
-    <h2> Contact Under Construction </h2>
+    <article class="post">
+      <h2> Contact Under Construction </h2>
+    </article>
 );
 
 export default Contact;

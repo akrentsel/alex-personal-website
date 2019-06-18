@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const NavBar = () => (
     <header id="header">
-      <h1><a href="index.html">Future Imperfect</a></h1>
+      <h1><Link to="/">AK</Link></h1>
       <nav class="links">
       <ul>
         <li><Link to="/">Home</Link></li>
