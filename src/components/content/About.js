@@ -2,8 +2,12 @@ import React from "react";
 
 const About = () => (
     <article className="post">
-    <h2> About Under Construction </h2>
-    Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+      <header>
+        <div className="title">
+          <h2><a href="single.html">About</a></h2>
+        </div>
+      </header>
+      <p>lahsf</p>
     </article>
 );
 
