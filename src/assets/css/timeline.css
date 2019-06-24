@@ -1,0 +1,11 @@
+.timeline-element-custom .vertical-timeline-element-content {
+  background: #f4f4f4;
+}
+
+.timeline-element-custom .vertical-timeline-element-content:before {
+  border-left-color: #f4f4f4 !important;
+}
+
+.vertical-timeline::before {
+  background: #dadada;
+}

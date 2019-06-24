@@ -11,8 +11,8 @@ import Contact from './components/content/Contact.js';
 import Welcome from './components/content/Welcome.js';
 import BriefAboutInsert from './components/BriefAboutInsert.js';
 
-function AppRouter() {
-  return (
+class App extends React.Component {
+  render = () => (
     <DocumentTitle title='Alex Krentsel'>
       <Router>
         <div id="wrapper">
@@ -28,7 +28,7 @@ function AppRouter() {
         </div>
       </Router>
     </DocumentTitle>
-  );
+  )
 }
 
-export default AppRouter;
+export default App;
