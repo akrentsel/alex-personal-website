@@ -27,6 +27,7 @@ const BriefAboutInsert = () => (
         <ul className="icons">
           <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/alex-krentsel/" className="icon brands fa-linkedin"><span className="label">LinkedIn</span></a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/alex.krentsel" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCu1Zgi1SI0rZQW94_OP16NQ" className="icon brands fa-youtube"><span className="label">YouTube</span></a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/akrentsel/" className="icon brands fa-github"><span className="label">GitHub</span></a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="mailto:alex@krentsel.com" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
         </ul>

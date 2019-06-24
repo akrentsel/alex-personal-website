@@ -9,7 +9,8 @@ import CS189KernelDiscPic from 'assets/imgs/kernel-discussion-img.png'
 const Teaching = () => (
     <DocumentTitle title='Teaching'>
       <article className="post">
-        <h2> Projects Under Construction </h2>
+        <h2>Teaching</h2>
+        <p>While at UC Berkeley, I worked as a TA for 5 semesters. During this time, I made a variety of teaching materials for my sections. Below is a selection of some of the teaching materials that I created.</p>
         <article className="mini-post">
           <header>
             <h2>CS189 Entropy Explanation</h2>
