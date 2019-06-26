@@ -2,10 +2,50 @@
   background: #f4f4f4;
 }
 
-.timeline-element-custom .vertical-timeline-element-content:before {
-  border-left-color: #f4f4f4 !important;
-}
-
 .vertical-timeline::before {
   background: #dadada;
+}
+
+.vertical-timeline-element.vertical-timeline-element--left .vertical-timeline-element-date {
+  left: 140% !important;
+}
+
+.vertical-timeline-element-content::before {
+  border-right-color: #f4f4f4;
+}
+
+.img_logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.4em;
+  line-height: 1.75;
+}
+
+
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    left: 140%;
+  }
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date,
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date {
+    right: 140%;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element-content::before {
+    border-left-color: #f4f4f4;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content::before,
+  .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content::before {
+    border-right-color: #f4f4f4;
+  }
+
+  .img_logo {
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+  }
 }

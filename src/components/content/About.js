@@ -1,108 +1,144 @@
 import React from "react";
 import DocumentTitle from 'react-document-title';
 import NormalPic from 'assets/imgs/alex-normal.jpg';
+import TimelineIcon from 'components/aux/TimelineIcon.js';
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import 'assets/css/timeline.css';
 
-const About = () => (
-    <DocumentTitle title='About'>
-      <article className="post">
-        <header>
-          <div className="title">
-            <h2><a href="single.html">About</a></h2>
-          </div>
-        </header>
-        <p>Below is my timeline.</p>
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="timeline-element-custom"
-            date="2011 - present"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-            icon={<i className="icon brands fa-2x fa-linkedin"></i>}
-          >
-            <h3 className="vertical-timeline-element-title">Creative Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="timeline-element-custom"
-            date="2010 - 2011"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-
-          >
-            <h3 className="vertical-timeline-element-title">Art Director</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="timeline-element-custom"
-            date="2008 - 2010"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-            <p>
-              User Experience, Visual Design
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="timeline-element-custom"
-            date="2006 - 2008"
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Web Designer</h3>
-            <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-            <p>
-              User Experience, Visual Design
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="timeline-element-custom"
-            date="April 2013"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-            <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-            <p>
-              Strategy, Social Media
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="timeline-element-custom"
-            date="November 2012"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-            <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-            <p>
-              Creative Direction, User Experience, Visual Design
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="timeline-element-custom"
-            date="2002 - 2006"
-            iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          >
-            <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-            <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-            <p>
-              Creative Direction, Visual Design
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-          />
-        </VerticalTimeline>
-      </article>
-    </DocumentTitle>
-);
+class About extends React.Component {
+    render() {
+      return (
+        <DocumentTitle title='About'>
+          <article className="post">
+            <header>
+              <div className="title">
+                <h2><a href="single.html">About</a></h2>
+              </div>
+            </header>
+            <p>Below is my timeline.</p>
+            <VerticalTimeline>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="1997"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fas fa-birthday-cake"/>}
+              >
+                <h4 className="vertical-timeline-element-subtitle">Born in Missouri</h4>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="2005"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fas fa-apple-alt"/>}
+              >
+                <h3 className="vertical-timeline-element-title">Moved to Upstate New York</h3>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="2013"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fas fa-horse-head"/>}
+              >
+                <h3 className="vertical-timeline-element-title">Moved to Kentucky</h3>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="August 2014 - June 2015"
+                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fas fa-glasses"/>}
+              >
+                <h3 className="vertical-timeline-element-title">Intern at Interapt</h3>
+                <h4 className="vertical-timeline-element-subtitle">Louisville, KY</h4>
+                <p>
+                  Google Glass
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="2015-2019"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fas fa-university"/>}
+              >
+                <h4 className="vertical-timeline-element-subtitle">UC Berkeley Begins</h4>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="Summer 2016"
+                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fab fa-google"/>}
+              >
+                <h3 className="vertical-timeline-element-title">Intern at Google</h3>
+                <h4 className="vertical-timeline-element-subtitle">Mountain View, CA</h4>
+                <p>
+                  ...
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="Summer 2017"
+                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fab fa-youtube"/>}
+              >
+                <h3 className="vertical-timeline-element-title">YouTube, Software Engineering Intern</h3>
+                <h4 className="vertical-timeline-element-subtitle">Zurich, Switzerland</h4>
+                <p>
+                  ...
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="Summer 2018"
+                iconStyle={{ background: 'rgb(73, 103, 173)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fab fa-facebook-f"/>}
+              >
+                <h3 className="vertical-timeline-element-title">Facebook, Software Engineering Intern</h3>
+                <h4 className="vertical-timeline-element-subtitle">Menlo Park, CA</h4>
+                <p>
+                  ...
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="2019"
+                iconStyle={{ background: 'rgb(73, 103, 173)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fas fa-graduation-cap"/>}
+              >
+                <h3 className="vertical-timeline-element-title">Graduated from UC Berkeley</h3>
+                <h4 className="vertical-timeline-element-subtitle"></h4>
+                <p>
+                  ...
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="August 2019 - Present"
+                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fab fa-youtube"/>}
+              >
+                <h3 className="vertical-timeline-element-title">YouTube, Software Engineer</h3>
+                <h4 className="vertical-timeline-element-subtitle">San Bruno, CA</h4>
+                <p>
+                  ...
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="Today, [current time]"
+                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+              >
+                <h4 className="vertical-timeline-element-subtitle">Someone from [location] looks at my website</h4>
+                <p>
+                  ...
+                </p>
+              </VerticalTimelineElement>
+            </VerticalTimeline>
+          </article>
+        </DocumentTitle>
+    );
+  }
+}
 
 export default About;
 
