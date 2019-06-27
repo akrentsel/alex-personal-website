@@ -3,6 +3,7 @@ import DocumentTitle from 'react-document-title';
 import NormalPic from 'assets/imgs/alex-normal.jpg';
 import TimelineIcon from 'components/aux/TimelineIcon.js';
 import $ from "jquery";
+import ReactTooltip from 'react-tooltip'
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -172,6 +173,10 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fas fa-user"/>}
               >
+                <a className="location-info-a" data-tip="React-tooltip">
+                  <ReactTooltip />
+                  <i className="fas fa-info-circle location-info-tooltip"></i>
+                </a>
                 <h3 className="vertical-timeline-element-title">A Visitor!</h3>
                 <p>
                   Someone from {this.state.location} read my timeline!
