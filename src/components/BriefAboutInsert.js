@@ -6,6 +6,7 @@ import SillyPic from 'assets/imgs/alex-silly.jpg';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import ToggleImage from './ToggleImage.js';
+import ReadMoreButton from 'components/aux/ReadMoreButton.js';
 
 // TODO(akrentsel): Make the Read More button scroll to the top!
 const BriefAboutInsert = () => (
@@ -25,6 +26,7 @@ const BriefAboutInsert = () => (
         I've previously worked at <a href="https://ads.google.com/">Google (Ads)</a>, <a href="https://www.facebook.com/">Facebook</a>, and <a href="https://www.interapt.com/">Interapt</a>.</p>
 
         <Link to="/about/" className="button large">Read More</Link>
+        
       </section>
       <section id="footer">
         <ul className="icons">
