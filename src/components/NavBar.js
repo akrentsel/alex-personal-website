@@ -22,12 +22,12 @@ class NavBar extends React.Component {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
           </nav>
-          <nav class="main">
+          <nav className="main">
 							<ul>
-								<li class="menu">
-									<a class="fa-bars">
+								<li className="menu">
+									<a className="fa-bars">
                     <Menu right width={200}>
-                      <Link to="/"><h3>Home</h3></Link>
+                      <Link to="/">Home</Link>
                       <Link to="/about">About</Link>
                       <Link to="/music">Music</Link>
                       <Link to="/teaching">Teaching</Link>
@@ -44,18 +44,3 @@ class NavBar extends React.Component {
 }
 
 export default NavBar;
-
-
-// <nav class="main">
-// <ul>
-//   <li>
-  // <Menu right styles={styles}>
-  //   <li><Link to="/">Home</Link></li>
-  //   <li><Link to="/about">About</Link></li>
-  //   <li><Link to="/music">Music</Link></li>
-  //   <li><Link to="/projects">Projects</Link></li>
-  //   <li><Link to="/contact">Contact</Link></li>
-  // </Menu>
-//   </li>
-// </ul>
-// </nav>

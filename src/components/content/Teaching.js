@@ -10,7 +10,19 @@ const Teaching = () => (
     <DocumentTitle title='Teaching'>
       <article className="post">
         <h2>Teaching</h2>
-        <p>While at UC Berkeley, I worked as a TA for 5 semesters. During this time, I made a variety of teaching materials for my sections. Below is a selection of some of the teaching materials that I created.</p>
+        <p>While at UC Berkeley, I worked as a TA for 5 semesters. During this time, I made a variety of teaching materials for my sections. Below is a selection of some of the teaching materials that I created.
+
+        </p>
+        <p>
+        I taught
+        <ul style={{listStylePosition: "inside"}}>
+          <li><a target="_blank" href="https://inst.eecs.berkeley.edu/~ee16a/fa16/">EE16A: Introduction to Electrical Engineering</a>, Fall 2016</li>
+          <li><a target="_blank" href="https://inst.eecs.berkeley.edu/~ee16a/sp17/">EE16A: Introduction to Electrical Engineering</a>, Spring 2017</li>
+          <li><a target="_blank" href="https://sp18.datastructur.es/">CS61B: Data Structures and Algorithms</a>, Spring 2018</li>
+          <li><a target="_blank" href="http://cs168.io/">CS168: Internet Architecture</a>, Fall 2018</li>
+          <li><a target="_blank" href="https://people.eecs.berkeley.edu/~jrs/189s19/">CS189/CS289: Machine Learning</a>, Spring 2019</li>
+        </ul>
+        </p>
         <article className="mini-post">
           <header>
             <h2>CS189 Entropy Explanation</h2>

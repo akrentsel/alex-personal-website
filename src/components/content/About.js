@@ -2,28 +2,44 @@ import React from "react";
 import DocumentTitle from 'react-document-title';
 import NormalPic from 'assets/imgs/alex-normal.jpg';
 import TimelineIcon from 'components/aux/TimelineIcon.js';
+import $ from "jquery";
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import 'assets/css/timeline.css';
 
-// function ipLookUp () {
-//   $.ajax('http://ip-api.com/json')
-//   .then(
-//       function success(response) {
-//           console.log('User\'s Location Data is ', response);
-//           console.log('User\'s Country', response.country);
-//       },
-//
-//       function fail(data, status) {
-//           console.log('Request failed.  Returned status of',
-//                       status);
-//       }
-//   );
-// }
-
 class About extends React.Component {
+    constructor(props) {
+      super(props);
+
+      var date = new Date();
+      var options = { year: 'numeric', month: 'long', day: 'numeric' };
+      var viewerTimestamp = date.toLocaleDateString("en-US", options);
+      this.state = {
+        location: "an unknown city",
+        viewerTimestamp: viewerTimestamp
+      };
+    }
+
+    componentDidMount() {
+      var self = this;
+      $.ajax('http://ip-api.com/json')
+      .then(
+          function success(response) {
+            var loc = response.city + ", " + response.country;
+            self.setState( {
+              location: loc
+            })
+          },
+          function fail(data, status) {
+              console.log('Request failed.  Returned status of',
+                          status);
+          }
+      );
+    }
+
     render() {
+      console.log(this.location);
       return (
         <DocumentTitle title='About'>
           <article className="post">
@@ -140,10 +156,11 @@ class About extends React.Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="timeline-element-custom"
-                date="Today, [current time]"
+                date={this.state.viewerTimestamp}
                 iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fas fa-user"/>}
               >
-                <h4 className="vertical-timeline-element-subtitle">Someone from [location] looks at my website</h4>
+                <h4 className="vertical-timeline-element-subtitle">Someone from {this.state.location} read my About page</h4>
                 <p>
                   ...
                 </p>
@@ -156,5 +173,3 @@ class About extends React.Component {
 }
 
 export default About;
-
-// Idea - add timeline, where last thing is the date and time and it uses the viewer's IP address to say "Person from Italy looked at website". More info button that explains how it works.
