@@ -19,6 +19,7 @@ const Teaching = () => (
           <li><a target="_blank" href="http://cs168.io/">CS168: Internet Architecture</a>, Fall 2018</li>
           <li><a target="_blank" href="https://people.eecs.berkeley.edu/~jrs/189s19/">CS189/CS289: Machine Learning</a>, Spring 2019</li>
         </ul>
+        As a TA, I taught discussion sections of 20-40 students, wrote discussion sheets, wrote exams, wrote homeworks, graded exams, held office hours, and proctored exams.
         </p>
         <p>
         During this time, I made a variety of teaching materials for my sections.
