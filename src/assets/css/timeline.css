@@ -1,3 +1,30 @@
+/* For positioning info circle */
+.timeline-element-custom {
+  position: relative;
+}
+
+.timeline-element-custom .tooltip-wrapper {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+a.location-info-a {
+  text-decoration: none;
+}
+
+.timeline-element-custom .tooltip-wrapper .location-info-tooltip {
+  max-width: 500px;
+}
+
+.timeline-element-custom .tooltip-wrapper .location-info-tooltip > p {
+  color: white;
+  margin-top: 0;
+  font-size: 1.1em;
+}
+
+/* End */
+
 .timeline-element-custom .vertical-timeline-element-content {
   background: #f4f4f4;
 }
@@ -51,6 +78,6 @@
 }
 
 
-.location-info-a {
+/* .location-info-a {
   text-decoration: none !important;
-}
+} */

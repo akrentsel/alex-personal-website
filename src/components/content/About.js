@@ -80,7 +80,7 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fas fa-glasses"/>}
               >
-                <h3 className="vertical-timeline-element-title">Intern at Interapt</h3>
+                <h3 className="vertical-timeline-element-title"><a target="_blank" href="https://www.interapt.com/">Interapt</a>, Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Louisville, KY</h4>
                 <p>
                   Google Glass
@@ -92,7 +92,7 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(236, 181, 73)', color: '#133C76' }}
                 icon={<TimelineIcon iconClass="fas fa-university"/>}
               >
-                <h3 className="vertical-timeline-element-subtitle">UC Berkeley</h3>
+                <h3 className="vertical-timeline-element-subtitle"><a target="_blank" href="https://www.berkeley.edu/">UC Berkeley</a></h3>
                 <h4 className="vertical-timeline-element-subtitle">Started College</h4>
                 <p>
                   One of 12 Out-of-State <a target="_blank" href="https://financialaid.berkeley.edu/regents-and-chancellors-scholarship">Regents' & Chancellor's Scholarships</a> of Class of 2019.
@@ -104,7 +104,7 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(80, 133, 236)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fab fa-google"/>}
               >
-                <h3 className="vertical-timeline-element-title">Google, Engineering Practicum Intern</h3>
+                <h3 className="vertical-timeline-element-title"><a target="_blank" href="https://www.google.com/">Google</a>, Engineering Practicum Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Mountain View, CA</h4>
                 <p>
                   AdWords Next team, working on the new landing page for AdWords called Overviews.
@@ -116,7 +116,7 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(235, 50, 35)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fab fa-youtube"/>}
               >
-                <h3 className="vertical-timeline-element-title">YouTube, Software Engineering Intern</h3>
+                <h3 className="vertical-timeline-element-title"><a target="_blank" href="https://www.facebook.com/">YouTube</a>, Software Engineering Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Zurich, Switzerland</h4>
                 <p>
                   Creator Studio team, YouTube's home for creators. Worked on Translations tab and diagnosing an issue in the Profanity Classifier predictions for gaming videos.
@@ -128,7 +128,7 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(73, 103, 173)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fab fa-facebook-f"/>}
               >
-                <h3 className="vertical-timeline-element-title">Facebook, Software Engineering Intern</h3>
+                <h3 className="vertical-timeline-element-title"><a target="_blank" href="https://www.facebook.com/">Facebook</a>, Software Engineering Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Menlo Park, CA</h4>
                 <p>
                   Ads Core Signals team, ensuring data is clean and usable. Wrote Messenger Bot to help developers set up and debug the Facebook SDK.
@@ -140,10 +140,10 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(236, 181, 73)', color: '#133C76' }}
                 icon={<TimelineIcon iconClass="fas fa-graduation-cap"/>}
               >
-                <h3 className="vertical-timeline-element-title">UC Berkeley</h3>
+                <h3 className="vertical-timeline-element-title"><a target="_blank" href="https://www.berkeley.edu/">UC Berkeley</a></h3>
                 <h4 className="vertical-timeline-element-subtitle">Graduated, <i>Magna Cum Laude</i></h4>
                 <p>
-                  B.S. in Elec. Eng. & Comp. Sci (EECS), B.A. in Music
+                  B.S. in <a target="_blank" href="https://eecs.berkeley.edu">Elec. Eng. & Comp. Sci (EECS)</a>, B.A. in <a target="_blank" href="http://music.berkeley.edu/">Music</a>
                 </p>
                 <p>
                 <ul>
@@ -161,7 +161,7 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(235, 50, 35)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fab fa-youtube"/>}
               >
-                <h3 className="vertical-timeline-element-title">YouTube, Software Engineer</h3>
+                <h3 className="vertical-timeline-element-title"><a target="_blank" href="https://www.facebook.com/">YouTube</a>, Software Engineer</h3>
                 <h4 className="vertical-timeline-element-subtitle">San Bruno, CA</h4>
                 <p>
                   Home of cat videos
@@ -173,13 +173,18 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fas fa-user"/>}
               >
-                <a className="location-info-a" data-tip="React-tooltip">
-                  <ReactTooltip />
-                  <i className="fas fa-info-circle location-info-tooltip"></i>
-                </a>
+                <div className="tooltip-wrapper">
+                  <a data-tip className="location-info-a" >
+                    <ReactTooltip className="location-info-tooltip" effect="solid">
+                      <p>If you're curious, I get your city from your IP address.
+                      It may be a bit off, as IP addresses don't always map to geographic locations.</p>
+                    </ReactTooltip>
+                    <i className="fas fa-info-circle location-info-tooltip"></i>
+                  </a>
+                </div>
                 <h3 className="vertical-timeline-element-title">A Visitor!</h3>
                 <p>
-                  Someone from {this.state.location} read my timeline!
+                  Someone from <b><u>{this.state.location}</u></b> read my timeline!
                 </p>
               </VerticalTimelineElement>
             </VerticalTimeline>
