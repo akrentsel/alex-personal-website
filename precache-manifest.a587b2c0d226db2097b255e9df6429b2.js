@@ -1,23 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "45db41aa654589ad1be67a637772a0c0",
+    "revision": "2ae736ceafeec59af1806ab8b8d29ad6",
     "url": "/index.html"
   },
   {
-    "revision": "563aab0fd1837e08912e",
-    "url": "/static/css/main.76dadedf.chunk.css"
+    "revision": "73ae9ea34a6959633962",
+    "url": "/static/css/2.38750c1c.chunk.css"
   },
   {
-    "revision": "7308c38b9ad69938fcad",
-    "url": "/static/js/2.672c19db.chunk.js"
+    "revision": "8c9d08f326d8d3eabc88",
+    "url": "/static/css/main.e1cc5d63.chunk.css"
   },
   {
-    "revision": "563aab0fd1837e08912e",
-    "url": "/static/js/main.6e735549.chunk.js"
+    "revision": "73ae9ea34a6959633962",
+    "url": "/static/js/2.9525b0d0.chunk.js"
+  },
+  {
+    "revision": "8c9d08f326d8d3eabc88",
+    "url": "/static/js/main.30b7ecbc.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
     "url": "/static/js/runtime~main.a8a9905a.js"
+  },
+  {
+    "revision": "c915c6729d697dd8a92971c4b8b70ab5",
+    "url": "/static/media/UI_example1.c915c672.png"
   },
   {
     "revision": "96add150472826acc90ab5bf7ab673ec",
@@ -30,6 +38,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6db494f0a7787e1813227e7d79b9cdbb",
     "url": "/static/media/alex-silly.6db494f0.jpg"
+  },
+  {
+    "revision": "16b7edd43f3b8fd4f64f94adf52c9811",
+    "url": "/static/media/dis10-sol.16b7edd4.pdf"
+  },
+  {
+    "revision": "46b9391b2b4bb82f08a1b5f26cc3d4bd",
+    "url": "/static/media/entropy-walkthrough-cs189.46b9391b.png"
   },
   {
     "revision": "03783c5172ee1ad128c576bf88fac168",
@@ -90,5 +106,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ef3df98419d143d9617fe163bf4edc0b",
     "url": "/static/media/fa-solid-900.ef3df984.eot"
+  },
+  {
+    "revision": "a6e4869617344d152a2ce61502101736",
+    "url": "/static/media/kernel-discussion-img.a6e48696.png"
   }
 ]);
