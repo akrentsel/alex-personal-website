@@ -24,10 +24,10 @@ class About extends React.Component {
 
     componentDidMount() {
       var self = this;
-      $.ajax('http://ip-api.com/json')
+      $.ajax('https://ipapi.co/json')
       .then(
           function success(response) {
-            var loc = response.city + ", " + response.country;
+            var loc = response.city + ", " + response.country_name;
             self.setState( {
               location: loc
             })
