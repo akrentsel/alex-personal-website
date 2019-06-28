@@ -5,7 +5,11 @@ import 'assets/css/music.css';
 const Music = () => (
     <DocumentTitle title='Music'>
       <article className="post">
-        <h2> Music Under Construction </h2>
+        <h2> Music </h2>
+        <p>I started playing violin in elementary school and quickly fell in love.
+        I played bassoon for a year, saxaphone for two years, and a bit of piano,
+        but ultimately violin was the instrument for me. I studied with Dezso Vaghy, Peter McHugh, and Dan Flanagan.</p>
+        <p>Below is a selection of recordings of solo, chamber, and symphonic works I've performed.</p>
         <section>
 								<div className="mini-posts">
 										<article className="mini-post">
@@ -19,7 +23,7 @@ const Music = () => (
 										<article className="mini-post">
 											<header>
 												<h3><a href="single.html">Brahms Scherzo in C Minor, "Sonatensatz"</a></h3>
-												<time className="published" dateTime="">Senior Recital</time>
+												<time className="published" dateTime="">UC Berkeley Senior Recital</time>
 												<a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
 											</header>
 											<iframe src="https://www.youtube.com/embed/n9A7k26YRVs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
@@ -50,6 +54,15 @@ const Music = () => (
                         <a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
                       </header>
                       <iframe src="https://www.youtube.com/embed/0xqngsKcEho" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </article>
+
+                    <article className="mini-post">
+                      <header>
+                        <h3><a href="single.html">Beethoven "Spring" Sonata in F Major, Op. 24</a></h3>
+                        <time className="published" dateTime="">UC Berkeley Senior Recital</time>
+                        <a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
+                      </header>
+                      <iframe src="https://www.youtube.com/embed/CeHkgn7e5Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </article>
 								</div>
 							</section>

@@ -152,6 +152,7 @@ class About extends React.Component {
                   <li>2017-2018 <a target="_blank" href="https://eecs.berkeley.edu/resources/undergrads/accel">Accel Scholar</a></li>
                   <li><a target="_blank" href="https://pbk.berkeley.edu/">Phi Beta Kappa</a> Honor Society</li>
                   <li><a target="_blank" href="https://orchestra.berkeley.edu/">UC Berkeley Symphony Orchestra</a></li>
+                  <li><a target="_blank" href="https://eecs.berkeley.edu/resources/undergrads/honors">EECS Honors Program</a></li>
                 </ul>
                 </p>
               </VerticalTimelineElement>
