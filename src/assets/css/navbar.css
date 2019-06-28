@@ -1,0 +1,79 @@
+/*  TODO(akrentsel): Clean up the css below */
+
+		.bm-menu {
+	    background: #fff;
+	  }
+
+		.bm-burger-button {
+			width: 44px;
+			height: 44px;
+		}
+
+		.bm-cross-button {
+			height: 24px;
+			width: 24px;
+		}
+
+		.bm-cross {
+			background: #bdc3c7;
+		}
+
+		.bm-menu {
+			padding: 2.5em 1.5em 0;
+			fontSize: 1.15em;
+		}
+
+		.bm-menu-wrap {
+			position: fixed;
+			height: 100%;
+			border-left: solid 1px rgba(160, 160, 160, 0.3);
+		}
+
+		.bm-morph-shape {
+			fill: #373a47;
+		}
+
+		.bm-item-list {
+			color: #b8b7ad;
+			padding: 0.8em;
+			display: block;
+		}
+
+		.bm-overlay {
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		.bm-item-list {
+		  margin-top: 0;
+		}
+
+
+		.menu-hover {
+		 margin-right: 1em;
+		}
+
+		.menu-hover:hover {
+		  opacity: 0.5;
+		}
+
+		@media screen and (min-width: 980px) {
+
+			#header .main {
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+			.bm-burger-button {
+				width: 44px;
+				height: 56px;
+			}
+		}
+
+		@media screen and (max-width: 740px) {
+			.bm-burger-button {
+				width: 44px;
+				height: 44px;
+			}
+		}
