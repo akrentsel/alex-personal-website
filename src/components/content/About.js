@@ -83,7 +83,7 @@ class About extends React.Component {
                 <h3 className="vertical-timeline-element-title"><a target="_blank" href="https://www.interapt.com/">Interapt</a>, Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Louisville, KY</h4>
                 <p>
-                  Google Glass
+                  Co-wrote Google Glass live-streaming app that lead Interapt to be chosen as a <a target="_blank" href="https://insiderlouisville.com/economy/startups/interapt-named-google-glass-work-partners/">Glass at Work partner</a>. Worked on various Android apps.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
