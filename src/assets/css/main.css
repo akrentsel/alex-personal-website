@@ -3610,4 +3610,13 @@ input, select, textarea {
 			}
 
 		}
-		
+
+/* Adjusting the spacing around a header in a post */
+	.post > header {
+		margin-bottom: 2em;
+	}
+
+	.post > header .title {
+		padding-top: 2.4em;
+		padding-bottom: 2em;
+	}

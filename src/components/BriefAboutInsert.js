@@ -3,7 +3,7 @@ import React from 'react';
 import NormalPic from 'assets/imgs/alex-normal.jpg';
 import NaturePic from 'assets/imgs/alex-nature.jpg';
 import SillyPic from 'assets/imgs/alex-silly.jpg';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import ToggleImage from './ToggleImage.js';
 

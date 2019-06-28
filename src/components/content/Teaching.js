@@ -9,7 +9,11 @@ import CS189KernelDiscPic from 'assets/imgs/kernel-discussion-img.png'
 const Teaching = () => (
     <DocumentTitle title='Teaching'>
       <article className="post">
-        <h2>Teaching</h2>
+        <header>
+          <div className="title">
+            <h2>Teaching</h2>
+          </div>
+        </header>
         <p>While at UC Berkeley, I worked as a TA for 5 semesters, teaching
         I taught
         <ul style={{listStylePosition: "inside"}}>

@@ -5,7 +5,11 @@ import 'assets/css/music.css';
 const Music = () => (
     <DocumentTitle title='Music'>
       <article className="post">
-        <h2> Music </h2>
+        <header>
+          <div className="title">
+            <h2>Music</h2>
+          </div>
+        </header>
         <p>I started playing violin in elementary school and quickly fell in love.
         I played bassoon for a year, saxaphone for two years, and a bit of piano,
         but ultimately violin was the instrument for me. I studied with Dezso Vaghy, Peter McHugh, and Dan Flanagan.</p>
