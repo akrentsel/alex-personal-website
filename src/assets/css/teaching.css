@@ -1,0 +1,8 @@
+article.mini-post header p {
+  text-transform: none;
+  font-size:  12pt;
+  line-height: 1.5;
+  letter-spacing: 0em;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  margin-top: 0;
+}

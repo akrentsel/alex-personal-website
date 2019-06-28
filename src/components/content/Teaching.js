@@ -1,5 +1,6 @@
 import React from "react";
 import DocumentTitle from 'react-document-title';
+import 'assets/css/teaching.css';
 
 import CS61BProjPic from 'assets/imgs/UI_example1.png';
 import EntropyExplanationPic from 'assets/imgs/entropy-walkthrough-cs189.png'
@@ -50,15 +51,17 @@ const Teaching = () => (
         <article className="mini-post">
   				<header>
   					<h2>Build Your Own Game (BYOG): CS61B Project</h2>
-  					<time className="published" datetime="2015-10-20">December 2018 - February 2019</time>
+  					<time className="published" datetime="2018-12-10">December 2018 - February 2019</time>
+            <p>Co-wrote new project for the Spring offering of CS61B. Wrote the skeleton code structure, as well as the working prototypes and staff solution, and helped develp the project spec. Project implemented by ~1400 students. The skeleton code for the project can be found on <a target="_blank" href="https://github.com/Berkeley-CS61B/skeleton-sp18/tree/master/proj2/byog">GitHub</a>.</p>
   				</header>
   				<a target="_blank" href="https://sp18.datastructur.es/materials/proj/proj2/proj2" className="image"><img height="400" src={CS61BProjPic} alt="" /></a>
   			</article>
 
         <article className="mini-post">
           <header>
-            <h2>CS189 Kernelization Discussion Material</h2>
-            <time className="published" datetime="2015-10-20">October 20, 2015</time>
+            <h2>CS189 Kernels Discussion Material</h2>
+            <time className="published" datetime="2019-04-09">April 2019</time>
+            <p>Course material written for a discussion section on Kernels. Some problems written entirely by me, others edited from previous semesters. Taught to ~750 students in discussion sections by ~15 TAs. Created for Spring 2019's <a target="_blank" href="https://people.eecs.berkeley.edu/~jrs/189s19/">CS189/CS289: Machine Learning</a>.</p>
           </header>
           <a target="_blank" href={CS189KernelPDF} className="image"><img height="400" src={CS189KernelDiscPic} alt="" /></a>
         </article>
