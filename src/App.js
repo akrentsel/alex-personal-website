@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import DocumentTitle from 'react-document-title';
+import ScrollToTop from 'react-router-scroll-top'
 import './assets/css/main.css';
 
 import NavBar from './components/NavBar.js';
@@ -15,6 +16,7 @@ class App extends React.Component {
   render = () => (
     <DocumentTitle title='Alex Krentsel'>
       <Router>
+        <ScrollToTop/>
         <div id="wrapper">
           <Route path="/" component={NavBar} />
           <div id="main">
