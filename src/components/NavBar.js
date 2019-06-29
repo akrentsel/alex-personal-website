@@ -36,6 +36,7 @@ class NavBar extends React.Component {
             <li><Link to="/about">About</Link></li>
             <li><Link to="/music">Music</Link></li>
             <li><Link to="/teaching">Teaching</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
           </nav>
@@ -53,6 +54,7 @@ class NavBar extends React.Component {
                       <Link onClick={() => this.closeMenu()} to="/about">About</Link>
                       <Link onClick={() => this.closeMenu()} to="/music">Music</Link>
                       <Link onClick={() => this.closeMenu()} to="/teaching">Teaching</Link>
+                      <Link onClick={() => this.closeMenu()} to="/projects">Projects</Link>
                       <Link onClick={() => this.closeMenu()} to="/contact">Contact</Link>
                     </Menu>
                   </a>

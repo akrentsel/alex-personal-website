@@ -19,9 +19,9 @@ const BriefAboutInsert = () => (
       <section>
         <h3>Brief About</h3>
         <p>Hi! I'm Alex. I graduated from UC Berkeley with a B.S. in EECS and a B.A. in Music.
-        I work as a Software Engineer at <a target="_blank" href="https://www.youtube.com/">YouTube</a>.
+        I work as a Software Engineer at <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">YouTube</a>.
         I enjoy traveling, playing violin, and teaching.
-        I've previously worked at <a target="_blank" href="https://ads.google.com/">Google (Ads)</a>, <a target="_blank" href="https://www.facebook.com/">Facebook</a>, and <a target="_blank" href="https://www.interapt.com/">Interapt</a>.</p>
+        I've previously worked at <a target="_blank" rel="noopener noreferrer" href="https://ads.google.com/">Google (Ads)</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">Facebook</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.interapt.com/">Interapt</a>.</p>
 
         <Link to="/about/" className="button large">Read More</Link>
 

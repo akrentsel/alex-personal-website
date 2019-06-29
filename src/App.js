@@ -8,6 +8,7 @@ import NavBar from './components/NavBar.js';
 import About from './components/content/About.js';
 import Music from './components/content/Music.js';
 import Teaching from './components/content/Teaching.js';
+import Projects from './components/content/Projects.js';
 import Contact from './components/content/Contact.js';
 import Welcome from './components/content/Welcome.js';
 import BriefAboutInsert from './components/BriefAboutInsert.js';
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route path="/about" component={About} />
             <Route path="/music" component={Music} />
             <Route path="/teaching" component={Teaching} />
+            <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
           </div>
           <Route path="/" component={BriefAboutInsert} />

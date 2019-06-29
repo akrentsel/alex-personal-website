@@ -1,6 +1,5 @@
 import React from "react";
 import DocumentTitle from 'react-document-title';
-import NormalPic from 'assets/imgs/alex-normal.jpg';
 import TimelineIcon from 'components/aux/TimelineIcon.js';
 import $ from "jquery";
 import ReactTooltip from 'react-tooltip'
@@ -48,7 +47,6 @@ class About extends React.Component {
                 <h2>About</h2>
               </div>
             </header>
-            <p>Below is my timeline.</p>
             <VerticalTimeline>
               <VerticalTimelineElement
                 className="timeline-element-custom"
@@ -119,7 +117,7 @@ class About extends React.Component {
                 <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">YouTube</a>, Software Engineering Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Zurich, Switzerland</h4>
                 <p>
-                  Creator Studio team, YouTube's home for creators. Worked on Translations tab and diagnosing an issue in the Profanity Classifier predictions for gaming videos.
+                  <a target="_blank" rel="noopener noreferrer" href="https://studio.youtube.com/">Creator Studio</a> team, YouTube's home for creators. Worked on Translations tab and diagnosing an issue in the Profanity Classifier predictions for gaming videos.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement

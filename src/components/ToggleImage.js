@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
 class ToggleImage extends React.Component {
   state= {
     image: this.props.defaultImage,
@@ -38,7 +36,7 @@ class ToggleImage extends React.Component {
   render() {
     return (
       <div className="logo" onClick={this.handleClick} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
-        <img src={this.state.image} />
+        <img alt="Profile pic" src={this.state.image} />
       </div>
     );
   }
