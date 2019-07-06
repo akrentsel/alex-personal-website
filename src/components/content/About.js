@@ -93,7 +93,7 @@ class About extends React.Component {
                 <h3 className="vertical-timeline-element-subtitle"><a target="_blank" rel="noopener noreferrer" href="https://www.berkeley.edu/">UC Berkeley</a></h3>
                 <h4 className="vertical-timeline-element-subtitle">Started College</h4>
                 <p>
-                  One of 12 Out-of-State <a target="_blank" rel="noopener noreferrer" href="https://financialaid.berkeley.edu/regents-and-chancellors-scholarship">Regents' & Chancellor's Scholarships</a> of Class of 2019.
+                  One of 12 Out-of-State <a target="_blank" rel="noopener noreferrer" href="https://financialaid.berkeley.edu/regents-and-chancellors-scholarship">Regents' & Chancellor's Scholars</a> of Class of 2019.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
