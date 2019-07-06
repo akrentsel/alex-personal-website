@@ -35,7 +35,7 @@ const BriefAboutInsert = () => (
           <li><a target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/4015623/alex-k" className="fab fa-stack-overflow"><span className="label">StackOverflow</span></a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="mailto:alex@krentsel.com" className="fas fa-envelope"><span className="label">Email</span></a></li>
         </ul>
-        <p className="copyright">&copy; Alex Krentsel 2019. Design based on <a href="http://html5up.net">HTML5 UP</a> and <a href="https://mldangelo.com/">https://mldangelo.com/</a>.</p>
+        <p className="copyright">&copy; Alex Krentsel 2019. CSS from <a href="http://html5up.net">HTML5 UP</a>.</p>
       </section>
   </section>
 );
