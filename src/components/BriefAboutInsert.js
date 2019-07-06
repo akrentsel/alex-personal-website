@@ -23,7 +23,7 @@ const BriefAboutInsert = () => (
         I enjoy traveling, playing violin, and teaching.
         I've previously worked at <a target="_blank" rel="noopener noreferrer" href="https://ads.google.com/">Google (Ads)</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">Facebook</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.interapt.com/">Interapt</a>.</p>
 
-        <Link to="/about/" className="button large">Read More</Link>
+        <Link to="/about" className="button large">Read More</Link>
 
       </section>
       <section id="footer">
