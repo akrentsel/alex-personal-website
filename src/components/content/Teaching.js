@@ -16,7 +16,6 @@ const Teaching = () => (
           </div>
         </header>
         <p>While at UC Berkeley, I worked as a TA for 5 semesters, teaching
-        I taught
         <ul style={{listStylePosition: "inside"}}>
           <li><a target="_blank" rel="noopener noreferrer" href="https://inst.eecs.berkeley.edu/~ee16a/fa16/">EE16A: Introduction to Electrical Engineering</a>, Fall 2016</li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://inst.eecs.berkeley.edu/~ee16a/sp17/">EE16A: Introduction to Electrical Engineering</a>, Spring 2017</li>

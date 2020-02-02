@@ -129,7 +129,7 @@ class About extends React.Component {
                 <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">Facebook</a>, Software Engineering Intern</h3>
                 <h4 className="vertical-timeline-element-subtitle">Menlo Park, CA</h4>
                 <p>
-                  Ads Core Signals team, ensuring data is clean and usable. Wrote Messenger Bot to help developers set up and debug the Facebook SDK.
+                  Ads Core Signals team, ensuring ads data is clean and usable. Wrote Messenger Bot to help developers set up and debug the Facebook SDK.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -163,7 +163,7 @@ class About extends React.Component {
                 <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">YouTube</a>, Software Engineer</h3>
                 <h4 className="vertical-timeline-element-subtitle">San Bruno, CA</h4>
                 <p>
-                  Home of cat videos
+                  YouTube Music and Premium Growth team, focused on driving signups and keeping members for YouTube's subscription service. Working as a full stack engineer, writing code in C++ and a variety of internal languages.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
