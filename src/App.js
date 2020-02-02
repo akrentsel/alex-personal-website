@@ -13,6 +13,7 @@ import Projects from './components/content/Projects.js';
 import Contact from './components/content/Contact.js';
 import Welcome from './components/content/Welcome.js';
 import BriefAboutInsert from './components/BriefAboutInsert.js';
+import LinkShortener from './components/link/LinkShortener.js';
 
 class App extends React.Component {
   render = () => (
@@ -24,6 +25,7 @@ class App extends React.Component {
             <Route path="/" component={NavBar} />
             <div id="main">
               <Route exact path="/" component={Welcome} />
+              <Route exact path="/" component={LinkShortener} />
               <Route path="/about" component={About} />
               <Route path="/music" component={Music} />
               <Route path="/teaching" component={Teaching} />
