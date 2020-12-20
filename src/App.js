@@ -7,6 +7,7 @@ import "./assets/css/main.css";
 
 import NavBar from "./components/NavBar.js";
 import About from "./components/content/About.js";
+import Posts from "./components/content/Posts.js";
 import Music from "./components/content/Music.js";
 import Teaching from "./components/content/Teaching.js";
 import Projects from "./components/content/Projects.js";
@@ -28,6 +29,7 @@ class App extends React.Component {
               <Route path="/music" component={Music} />
               <Route path="/teaching" component={Teaching} />
               <Route path="/projects" component={Projects} />
+              <Route path="/posts" component={Posts} />
               <Route path="/contact" component={Contact} />
             </div>
             <Route path="/" component={BriefAboutInsert} />
