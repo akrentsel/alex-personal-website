@@ -1,5 +1,6 @@
 import React from "react";
 import DocumentTitle from "react-document-title";
+import ReactMarkdown from "react-markdown";
 import "assets/css/music.css";
 
 const STATUS_WAITING = 0;
@@ -34,7 +35,6 @@ class Post extends React.Component {
       .then(response => response.json())
       .then(data => {
         if (data.length === 0) {
-          console.log("AKRENTSEL entered the empty case");
           this.setState({ dataStatus: STATUS_NONEXISTANT });
           return;
         }
@@ -55,8 +55,23 @@ class Post extends React.Component {
   }
 
   render() {
+    var title;
+    switch (this.state.dataStatus) {
+      case STATUS_WAITING:
+        title = "Loading...";
+        break;
+      case STATUS_READY:
+        title = this.state.title + " - Alex Krentsel";
+        break;
+      case STATUS_NONEXISTANT:
+        title = "Post Not Found";
+        break;
+      case STATUS_ERROR:
+        title = "Error";
+        break;
+    }
     return (
-      <DocumentTitle title={this.state.title}>
+      <DocumentTitle title={title}>
         <article className="post">
           <header>
             <div className="title">
@@ -65,7 +80,9 @@ class Post extends React.Component {
               <p>Published {this.state.publishDate}</p>
             </div>
           </header>
-          <section>{this.state.markdownContent}</section>
+          <section>
+            <ReactMarkdown children={this.state.markdownContent} />
+          </section>
         </article>
       </DocumentTitle>
     );
