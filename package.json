@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.10.2",
+    "aws-sdk": "^2.814.0",
     "gh-pages": "^2.2.0",
     "jquery": "^3.5.1",
     "react": "^16.13.1",

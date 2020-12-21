@@ -3,40 +3,62 @@ import DocumentTitle from "react-document-title";
 import MiniPost from "components/blog/MiniPost.js";
 import "assets/css/music.css";
 
-const Posts = () => (
-  <DocumentTitle title="Posts">
-    <article className="post">
-      <header>
-        <div className="title">
-          <h2>Posts</h2>
-        </div>
-      </header>
-      <p>Thoughts on the world, for the world.</p>
-      <section>
-        <MiniPost />
-        <MiniPost />
-        <MiniPost />
-      </section>
-    </article>
-  </DocumentTitle>
-);
+class Posts extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      postList: []
+    };
+  }
 
-// <div className="mini-posts">
-//   <article className="mini-post">
-//     <header>
-//       <h3>Dvorak Piano Quartet in E flat Major, Mvmt. 1 & 2</h3>
-//       <time className="published" dateTime="">
-//         UC Berkeley Noon Concert
-//       </time>
-//     </header>
-//     <iframe
-//       title="Dvorak Piano Quartet in E flat Major, Mvmt. 1 & 2"
-//       src="https://www.youtube.com/embed/no2wYng-kWA"
-//       frameBorder="0"
-//       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-//       allowFullScreen
-//     ></iframe>
-//   </article>
-// </div>
+  getPostList() {
+    var request = fetch(
+      "https://325ab2lcl4.execute-api.us-east-1.amazonaws.com/default/posts",
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+    )
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        this.setState({ postList: data });
+        // TODO(akrentsel): Move creating miniposts into here. To avoid doing multiple times.
+      })
+      .catch(error => console.log("Error while fetching:", error));
+  }
+
+  componentDidMount() {
+    this.getPostList();
+  }
+
+  render() {
+    return (
+      <DocumentTitle title="Posts">
+        <article className="post">
+          <header>
+            <div className="title">
+              <h2>Posts</h2>
+            </div>
+          </header>
+          <p>Thoughts on the world, for the world.</p>
+          <section>
+            {this.state.postList.map((post, index) => (
+              <MiniPost
+                key={post.postPath}
+                title={post.title}
+                author={post.author}
+                postPath={post.postPath}
+                publishDate={post.publishDate}
+              />
+            ))}
+          </section>
+        </article>
+      </DocumentTitle>
+    );
+  }
+}
 
 export default Posts;

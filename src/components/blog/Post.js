@@ -1,99 +1,75 @@
 import React from "react";
+import DocumentTitle from "react-document-title";
+import "assets/css/music.css";
 
-import { Link } from "react-router-dom";
+const STATUS_WAITING = 0;
+const STATUS_READY = 1;
+const STATUS_NONEXISTANT = 2;
+const STATUS_ERROR = 3;
 
-const BriefAboutInsert = () => (
-  <section id="sidebar">
-    <section id="intro">
-      <header>
-        <h2>Alex Krentsel</h2>
-        <p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:alex@krentsel.com"
-          >
-            alex@krentsel.com
-          </a>
-        </p>
-      </header>
-    </section>
-    <section>
-      <h3>Brief About</h3>
+class Post extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dataStatus: STATUS_WAITING,
+      title: "",
+      markdownContent: "",
+      author: "",
+      publishDate: ""
+    };
+    this.getPostDetails(props.match.params.postPath);
+  }
 
-      <Link to="/about" className="button large">
-        Read More
-      </Link>
-    </section>
-    <section id="footer">
-      <ul className="icons">
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/alex-krentsel/"
-            className="fab fa-linkedin"
-          >
-            <span className="label">LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.facebook.com/alex.krentsel"
-            className="fab fa-facebook-f"
-          >
-            <span className="label">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.youtube.com/channel/UCu1Zgi1SI0rZQW94_OP16NQ"
-            className="fab fa-youtube"
-          >
-            <span className="label">YouTube</span>
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/akrentsel/"
-            className="fab fa-github"
-          >
-            <span className="label">GitHub</span>
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://stackoverflow.com/users/4015623/alex-k"
-            className="fab fa-stack-overflow"
-          >
-            <span className="label">StackOverflow</span>
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:alex@krentsel.com"
-            className="fas fa-envelope"
-          >
-            <span className="label">Email</span>
-          </a>
-        </li>
-      </ul>
-      <p className="copyright">
-        &copy; Alex Krentsel 2019. CSS from{" "}
-        <a href="http://html5up.net">HTML5 UP</a>.
-      </p>
-    </section>
-  </section>
-);
+  getPostDetails(postPath) {
+    var request = fetch(
+      "https://325ab2lcl4.execute-api.us-east-1.amazonaws.com/default/posts?postPath=" +
+        postPath,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json"
+        }
+      }
+    )
+      .then(response => response.json())
+      .then(data => {
+        if (data.length === 0) {
+          console.log("AKRENTSEL entered the empty case");
+          this.setState({ dataStatus: STATUS_NONEXISTANT });
+          return;
+        }
 
-export default BriefAboutInsert;
+        const post = data[0];
+        this.setState({
+          dataStatus: STATUS_READY,
+          title: post.title,
+          markdownContent: post.markdownContent,
+          author: post.author,
+          publishDate: post.publishDate
+        });
+      })
+      .catch(error => {
+        this.setState({ dataStatus: STATUS_ERROR });
+        console.log("Error while fetching:", error);
+      });
+  }
+
+  render() {
+    return (
+      <DocumentTitle title={this.state.title}>
+        <article className="post">
+          <header>
+            <div className="title">
+              <h2>{this.state.title}</h2>
+              <p>By {this.state.author}</p>
+              <p>Published {this.state.publishDate}</p>
+            </div>
+          </header>
+          <section>{this.state.markdownContent}</section>
+        </article>
+      </DocumentTitle>
+    );
+  }
+}
+
+export default Post;
