@@ -9,8 +9,9 @@ const Welcome = () => (
       </div>
     </header>
     <p>
-      Thanks for stopping by. This webpage is home to{" "}
+      Thanks for stopping by. This webpage is home to my{" "}
       <Link to="/about">info about me and my life/career timeline</Link>, my{" "}
+      <Link to="/posts">miscellaneous musings</Link>,{" "}
       <Link to="/music">violin performance recordings</Link>,{" "}
       <Link to="/teaching">teaching materials I've produced</Link>, past{" "}
       <Link to="/projects">projects I've worked on</Link>, and my{" "}
