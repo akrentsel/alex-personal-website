@@ -43,8 +43,11 @@ class Posts extends React.Component {
               <h2>Posts</h2>
             </div>
           </header>
-          <p>Thoughts on the world, for the world.</p>
           <section>
+            <p>
+              Thoughts on the world, for the world. A mix of technical posts,
+              comments on books, and discussion of ideas.
+            </p>
             {this.state.postList.map((post, index) => (
               <MiniPost
                 key={post.postPath}
