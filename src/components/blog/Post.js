@@ -2,6 +2,7 @@ import React from "react";
 import DocumentTitle from "react-document-title";
 import ReactMarkdown from "react-markdown";
 import "assets/css/music.css";
+import dateFormat from "dateformat";
 
 const STATUS_WAITING = 0;
 const STATUS_READY = 1;
@@ -72,8 +73,9 @@ class Post extends React.Component {
             <header>
               <div className="title">
                 <h2>{this.state.title}</h2>
-                <p>By {this.state.author}</p>
-                <p>Published {this.state.publishDate}</p>
+                <p>
+                  Published {dateFormat(this.state.publishDate, "mmm dS, yyyy")}
+                </p>
               </div>
             </header>
             <section>
