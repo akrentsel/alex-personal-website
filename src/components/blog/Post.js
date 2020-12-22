@@ -8,16 +8,24 @@ const STATUS_READY = 1;
 const STATUS_NONEXISTANT = 2;
 const STATUS_ERROR = 3;
 
+// This is the number of ms until "Loading..." will appear on the screen, if
+// data isn't returned yet.
+const GRACE_PERIOD_MS = 750;
+
 class Post extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      gracePeriod: true,
       dataStatus: STATUS_WAITING,
-      title: "",
+      title: "Loading...",
       markdownContent: "",
       author: "",
       publishDate: ""
     };
+    setTimeout(() => {
+      this.setState({ gracePeriod: false });
+    }, GRACE_PERIOD_MS);
     this.getPostDetails(props.match.params.postPath);
   }
 
@@ -54,6 +62,32 @@ class Post extends React.Component {
       });
   }
 
+  renderStatusContent() {
+    switch (this.state.dataStatus) {
+      case STATUS_WAITING:
+        return <p>{this.state.gracePeriod ? "" : "Loading..."}</p>;
+      case STATUS_READY:
+        return (
+          <>
+            <header>
+              <div className="title">
+                <h2>{this.state.title}</h2>
+                <p>By {this.state.author}</p>
+                <p>Published {this.state.publishDate}</p>
+              </div>
+            </header>
+            <section>
+              <ReactMarkdown children={this.state.markdownContent} />
+            </section>
+          </>
+        );
+      case STATUS_NONEXISTANT:
+        return <p>Post not found, please double check the link.</p>;
+      case STATUS_ERROR:
+        return <p>Error response from server, try again later.</p>;
+    }
+  }
+
   render() {
     var title;
     switch (this.state.dataStatus) {
@@ -72,18 +106,7 @@ class Post extends React.Component {
     }
     return (
       <DocumentTitle title={title}>
-        <article className="post">
-          <header>
-            <div className="title">
-              <h2>{this.state.title}</h2>
-              <p>By {this.state.author}</p>
-              <p>Published {this.state.publishDate}</p>
-            </div>
-          </header>
-          <section>
-            <ReactMarkdown children={this.state.markdownContent} />
-          </section>
-        </article>
+        <article className="post">{this.renderStatusContent()}</article>
       </DocumentTitle>
     );
   }

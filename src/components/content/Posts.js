@@ -1,14 +1,28 @@
 import React from "react";
 import DocumentTitle from "react-document-title";
 import MiniPost from "components/blog/MiniPost.js";
-import "assets/css/music.css";
+import FadeIn from "react-fade-in";
+
+const STATUS_WAITING = 0;
+const STATUS_READY = 1;
+const STATUS_ERROR = 2;
+
+// This is the number of ms until "Loading..." will appear on the screen, if
+// data isn't returned yet.
+const GRACE_PERIOD_MS = 750;
 
 class Posts extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      gracePeriod: true,
+      dataStatus: STATUS_WAITING,
       postList: []
     };
+
+    setTimeout(() => {
+      this.setState({ gracePeriod: false });
+    }, GRACE_PERIOD_MS);
   }
 
   getPostList() {
@@ -23,15 +37,44 @@ class Posts extends React.Component {
     )
       .then(response => response.json())
       .then(data => {
-        console.log(data);
-        this.setState({ postList: data });
+        this.setState({ dataStatus: STATUS_READY, postList: data });
         // TODO(akrentsel): Move creating miniposts into here. To avoid doing multiple times.
       })
-      .catch(error => console.log("Error while fetching:", error));
+      .catch(error => {
+        this.setState({ dataStatus: STATUS_ERROR });
+        console.log("Error while fetching:", error);
+      });
   }
 
   componentDidMount() {
     this.getPostList();
+  }
+
+  renderPostList() {
+    switch (this.state.dataStatus) {
+      case STATUS_READY:
+        return (
+          <ul>
+            <FadeIn>
+              {this.state.postList.map((post, index) => (
+                <li>
+                  <MiniPost
+                    key={post.postPath}
+                    title={post.title}
+                    author={post.author}
+                    postPath={post.postPath}
+                    publishDate={post.publishDate}
+                  />
+                </li>
+              ))}
+            </FadeIn>
+          </ul>
+        );
+      case STATUS_WAITING:
+        return <p>{this.state.gracePeriod ? "" : "Loading..."}</p>;
+      case STATUS_ERROR:
+        return <p>"Error loading posts..."</p>;
+    }
   }
 
   render() {
@@ -48,15 +91,7 @@ class Posts extends React.Component {
               Thoughts on the world, for the world. A mix of technical posts,
               comments on books, and discussion of ideas.
             </p>
-            {this.state.postList.map((post, index) => (
-              <MiniPost
-                key={post.postPath}
-                title={post.title}
-                author={post.author}
-                postPath={post.postPath}
-                publishDate={post.publishDate}
-              />
-            ))}
+            {this.renderPostList()}
           </section>
         </article>
       </DocumentTitle>
