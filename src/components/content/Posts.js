@@ -37,6 +37,10 @@ class Posts extends React.Component {
     )
       .then(response => response.json())
       .then(data => {
+        data.sort(
+          (entry1, entry2) =>
+            Date.parse(entry2.publishDate) - Date.parse(entry1.publishDate)
+        );
         this.setState({ dataStatus: STATUS_READY, postList: data });
         // TODO(akrentsel): Move creating miniposts into here. To avoid doing multiple times.
       })
