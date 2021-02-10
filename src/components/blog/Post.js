@@ -1,6 +1,7 @@
 import React from "react";
 import DocumentTitle from "react-document-title";
 import ReactMarkdown from "react-markdown";
+import gfm from "remark-gfm";
 import "assets/css/music.css";
 import dateFormat from "dateformat";
 
@@ -79,7 +80,10 @@ class Post extends React.Component {
               </div>
             </header>
             <section>
-              <ReactMarkdown children={this.state.markdownContent} />
+              <ReactMarkdown
+                plugins={[gfm]}
+                children={this.state.markdownContent}
+              />
             </section>
           </>
         );

@@ -21,7 +21,8 @@
     "react-router-scroll-top": "^0.2.1",
     "react-scripts": "^3.4.1",
     "react-tooltip": "^3.11.6",
-    "react-vertical-timeline-component": "^2.6.2"
+    "react-vertical-timeline-component": "^2.6.2",
+    "remark-gfm": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
