@@ -48,6 +48,13 @@ object-assign
  * Date: 2020-05-04T22:49Z
  */
 
+/*!
+ * repeat-string <https://github.com/jonschlinkert/repeat-string>
+ *
+ * Copyright (c) 2014-2015, Jon Schlinkert.
+ * Licensed under the MIT License.
+ */
+
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
