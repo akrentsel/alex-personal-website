@@ -160,10 +160,22 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(235, 50, 35)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fab fa-youtube"/>}
               >
-                <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">YouTube</a>, Software Engineer</h3>
+                <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">YouTube</a>, Software Engineer</h3>
                 <h4 className="vertical-timeline-element-subtitle">San Bruno, CA</h4>
                 <p>
                   YouTube Music and Premium Growth team, focused on driving signups and keeping members for YouTube's subscription service. Working as a full stack engineer, writing code in C++ and a variety of internal languages.
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="August 2021 - Present"
+                iconStyle={{ background: 'rgb(0, 58, 99)', color: '#FFFFFF' }}
+                icon={<TimelineIcon iconClass="fas fa-university"/>}
+              >
+                <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.howard.edu/">Howard University</a>, Lecturer</h3>
+                <h4 className="vertical-timeline-element-subtitle">Washington, D.C.</h4>
+                <p>
+                  On faculty at Howard University, teaching and writing curriculum for CSCI100: Intro to CS, which has 210 students, with a team of 6 TAs. See the course website at <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">csci100.org</a>.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -176,7 +188,7 @@ class About extends React.Component {
                   <a data-tip className="location-info-a" >
                     <ReactTooltip className="location-info-tooltip" effect="solid">
                       <p>If you're curious, I get your city from your IP address.
-                      It may be a bit off, as IP addresses don't always map to geographic locations.</p>
+                      It may be a bit off, as IP addresses don't always map well to geographic locations.</p>
                     </ReactTooltip>
                     <i className="fas fa-info-circle location-info-tooltip"></i>
                   </a>
