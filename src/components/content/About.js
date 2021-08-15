@@ -175,7 +175,7 @@ class About extends React.Component {
                 <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.howard.edu/">Howard University</a>, Lecturer</h3>
                 <h4 className="vertical-timeline-element-subtitle">Washington, D.C.</h4>
                 <p>
-                  On faculty at Howard University, teaching and writing curriculum for CSCI100: Intro to CS, which has 210 students, with a team of 6 TAs. See the course website at <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">csci100.org</a>.
+                  On faculty at Howard University, teaching and writing curriculum for CSCI100: Intro to CS, which has 210 students, with a team of 4 TAs. See the course website at <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">csci100.org</a>.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
