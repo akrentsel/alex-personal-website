@@ -175,7 +175,7 @@ class About extends React.Component {
                 <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.howard.edu/">Howard University</a>, Lecturer</h3>
                 <h4 className="vertical-timeline-element-subtitle">Washington, D.C.</h4>
                 <p>
-                  Visiting faculty at Howard University, lectured 185 students and wrote curriculum for CSCI100: Intro to Computer Science. See the course website at <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">csci100.org</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">course YouTube channel</a>.
+                  Visiting faculty at Howard University, lectured 185 students and wrote curriculum for CSCI100: Intro to Computer Science. See the course website at <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">csci100.org</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCS-xiMGMN9YsMxQnqAai4hw/featured">course YouTube channel</a>.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
@@ -187,7 +187,7 @@ class About extends React.Component {
                 <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/">Google</a>, Systems Research Engineer</h3>
                 <h4 className="vertical-timeline-element-subtitle">Sunnyvale, CA</h4>
                 <p>
-                  Member of the Systems Research Group at Google, run by Hank Levy and David Culler. Performing research with Sylvia Ratnasamy on redesigning aspects of Google's WANs.
+                  Member of the Systems Research Group at Google, run by Hank Levy and David Culler. Performing research with Sylvia Ratnasamy on redesigning aspects of Google's <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Wide_area_network">WANs</a>.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement

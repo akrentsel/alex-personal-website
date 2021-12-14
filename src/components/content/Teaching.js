@@ -6,6 +6,7 @@ import CS61BProjPic from 'assets/imgs/UI_example1.png';
 import EntropyExplanationPic from 'assets/imgs/entropy-walkthrough-cs189.png'
 import CS189KernelPDF from 'assets/pdfs/dis10-sol.pdf'
 import CS189KernelDiscPic from 'assets/imgs/kernel-discussion-img.png'
+import CSCI100Website from 'assets/imgs/csci100-website.png'
 
 const Teaching = () => (
     <DocumentTitle title='Teaching'>
@@ -21,7 +22,7 @@ const Teaching = () => (
           a visitng lecturer teaching 185 students in CSCI100: Intro to Computer Science.{" "}
           <ul>
             <li>Developed <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/calendar">syllabus and curriculum</a> based on industry standards and CS courses at Berkeley and Stanford.</li>
-            <li>Produced, recorded, and published <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">~125 lecture videos on course YouTube Channel</a>.</li>
+            <li>Produced, recorded, and published <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCS-xiMGMN9YsMxQnqAai4hw/featured">~125 lecture videos on course YouTube Channel</a>.</li>
             <li>Built course website, <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">csci100.org</a>, to act as centralized public hub for students and allow for auditing the course.</li>
             <li>Hired and managed team of 5 Howard TAs, hosting office hours and writing/grading assignments.</li>
             <li>Recruited 15 volunteer TAs from Google, providing weekly 30 hours of office hours, 15 hours of mock interviews, 6 hours of 1:1 tutoring.</li>
@@ -35,7 +36,7 @@ const Teaching = () => (
               including lecture videos, slides, topic calendar, syllabus, announcements, and more.
             </p>
           </header>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/calendar" className="image"><img height="400" src={EntropyExplanationPic} alt="" /></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/calendar" className="image"><img height="400" src={CSCI100Website} alt="" /></a>
         </article>
         <h3>Stanford University</h3>
         <p>I've TA'ed Stanford's Code-in-Place course twice (Spring 2020, 2021),{" "}
