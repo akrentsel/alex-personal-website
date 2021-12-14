@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e10c9969ceb72bbf7afaf08fd98bec8c",
+    "revision": "431bce5226680dc6291181483effeae7",
     "url": "/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/2.f681e662.chunk.css"
   },
   {
-    "revision": "eb2803d000016b5afabd",
+    "revision": "89782fd3a70f179262a2",
     "url": "/static/css/main.d590a9be.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.b75bb949.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eb2803d000016b5afabd",
-    "url": "/static/js/main.f4aa048d.chunk.js"
+    "revision": "89782fd3a70f179262a2",
+    "url": "/static/js/main.bafd12e6.chunk.js"
   },
   {
     "revision": "6f6fad05ee38bf1a85b4",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/alex-nature.96add150.jpg"
   },
   {
-    "revision": "9f8e47a30debb17ee3d197f09800cc51",
-    "url": "/static/media/alex-normal.9f8e47a3.jpg"
+    "revision": "55a6aa904f902029e9ccc8083667db5f",
+    "url": "/static/media/alex-normal.55a6aa90.jpg"
   },
   {
     "revision": "6db494f0a7787e1813227e7d79b9cdbb",
