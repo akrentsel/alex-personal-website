@@ -3,6 +3,7 @@ import DocumentTitle from "react-document-title";
 
 import SlashPic from "assets/imgs/slash-image.png";
 import ShortlPic from "assets/imgs/shortl-image.png";
+import WebsitePic from "assets/imgs/krentsel-website.png";
 
 const Projects = () => (
   <DocumentTitle title="Projects">
@@ -18,7 +19,33 @@ const Projects = () => (
       </p>
       <article className="mini-post">
         <header>
-          <h2>Shortl - Link Shortener</h2>
+          <h2>www.krentsel.com</h2>
+          <time className="published" datetime="2019-08-15">
+            June 2019
+          </time>
+          <p>
+            I built this website from scratch to be my presence on the web. It supports web, tablet, and mobile views.{" "}
+            I used React for the frontend, and host the static react app on Github. I only reused{" "}
+            <a target="_blank" rel="noopener noreferrer" href="http://html5up.net/">CSS from html5up</a>.{" "}
+            In 2020 I extended the website, building a blog hosting and serving platform{" "}
+            (effectively a CMS) from scratch on AWS. I write my posts in Markdown, add{" "}
+            them to my content database, and they get dynamically fetched and rendered on the{" "}
+            <a target="_blank" rel="noopener noreferrer" href="/posts">Posts page of my website</a>.
+            <br></br><br></br>See if you can find all of the hidden easter eggs!
+          </p>
+        </header>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://chrome.google.com/webstore/detail/slash-searchbar-shortcuts/hfdmjgkekkjdpabmbpjbpeijfhfdeacp"
+          className="image"
+        >
+          <img height="400" src={WebsitePic} alt="" />
+        </a>
+      </article>
+      <article className="mini-post">
+        <header>
+          <h2>Shortl.io - Link Shortener</h2>
           <time className="published" datetime="2020-05-20">
             May 2020
           </time>

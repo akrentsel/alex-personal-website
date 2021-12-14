@@ -77,7 +77,7 @@ class Posts extends React.Component {
       case STATUS_WAITING:
         return <p>{this.state.gracePeriod ? "" : "Loading..."}</p>;
       case STATUS_ERROR:
-        return <p>"Error loading posts..."</p>;
+        return <p>Well this is embarassing...error loading posts. Try again later.</p>;
     }
   }
 

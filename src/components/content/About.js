@@ -156,7 +156,7 @@ class About extends React.Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="timeline-element-custom"
-                date="August 2019 - Present"
+                date="August 2019 - Mid 2021"
                 iconStyle={{ background: 'rgb(235, 50, 35)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fab fa-youtube"/>}
               >
@@ -168,14 +168,26 @@ class About extends React.Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="timeline-element-custom"
-                date="August 2021 - Present"
+                date="August 2021 - December 2021"
                 iconStyle={{ background: 'rgb(0, 58, 99)', color: '#FFFFFF' }}
                 icon={<TimelineIcon iconClass="fas fa-university"/>}
               >
                 <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.howard.edu/">Howard University</a>, Lecturer</h3>
                 <h4 className="vertical-timeline-element-subtitle">Washington, D.C.</h4>
                 <p>
-                  On faculty at Howard University, teaching and writing curriculum for CSCI100: Intro to CS, which has 210 students, with a team of 4 TAs. See the course website at <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">csci100.org</a>.
+                  Visiting faculty at Howard University, lectured 185 students and wrote curriculum for CSCI100: Intro to Computer Science. See the course website at <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">csci100.org</a>, and <a target="_blank" rel="noopener noreferrer" href="https://www.csci100.org/">course YouTube channel</a>.
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
+                date="Mid 2021 - Present"
+                iconStyle={{ background: 'rgb(80, 133, 236)', color: '#fff' }}
+                icon={<TimelineIcon iconClass="fab fa-google"/>}
+              >
+                <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/">Google</a>, Systems Research Engineer</h3>
+                <h4 className="vertical-timeline-element-subtitle">Sunnyvale, CA</h4>
+                <p>
+                  Member of the Systems Research Group at Google, run by Hank Levy and David Culler. Performing research with Sylvia Ratnasamy on redesigning aspects of Google's WANs.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement
