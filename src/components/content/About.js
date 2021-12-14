@@ -184,10 +184,10 @@ class About extends React.Component {
                 iconStyle={{ background: 'rgb(80, 133, 236)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fab fa-google"/>}
               >
-                <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/">Google</a>, Systems Research Engineer</h3>
+                <h3 className="vertical-timeline-element-title"><a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/blog/topics/systems/google-creates-new-systems-research-group">Google, Systems Research Engineer</a></h3>
                 <h4 className="vertical-timeline-element-subtitle">Sunnyvale, CA</h4>
                 <p>
-                  Member of the Systems Research Group at Google, run by Hank Levy and David Culler. Performing research with Sylvia Ratnasamy on redesigning aspects of Google's <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Wide_area_network">WANs</a>.
+                  Member of the <a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/blog/topics/systems/google-creates-new-systems-research-group">Systems Research Group at Google</a>, run by Hank Levy and David Culler. Performing research with Sylvia Ratnasamy on redesigning aspects of Google's <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Wide_area_network">WANs</a>.
                 </p>
               </VerticalTimelineElement>
               <VerticalTimelineElement

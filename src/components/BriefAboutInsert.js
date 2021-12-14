@@ -32,7 +32,16 @@ const BriefAboutInsert = () => (
       <h3>Brief About</h3>
       <p>
         Hi! I'm Alex. I graduated from UC Berkeley with a B.S. in EECS and a
-        B.A. in Music. I work as a Software Engineer at{" "}
+        B.A. in Music. I work as a Systems Research Engineer in the{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://cloud.google.com/blog/topics/systems/google-creates-new-systems-research-group"
+        >
+          Systems Research Group at Google
+        </a>
+        . I enjoy traveling, playing violin, and teaching. I've previously
+        worked at{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -40,8 +49,7 @@ const BriefAboutInsert = () => (
         >
           YouTube
         </a>
-        . I enjoy traveling, playing violin, and teaching. I've previously
-        worked at{" "}
+        ,{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -65,7 +73,14 @@ const BriefAboutInsert = () => (
         >
           Interapt
         </a>
-        .
+        , and have{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.csci100.org/"
+        >
+          lectured Intro to CS at Howard University
+        </a>.
       </p>
 
       <Link to="/about" className="button large">
