@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "98e57e8036488bd0c2bc8d4c7310b122",
+    "revision": "e10c9969ceb72bbf7afaf08fd98bec8c",
     "url": "/index.html"
   },
   {
-    "revision": "0c583e3011070f548501",
+    "revision": "809f998016b223da6ad4",
     "url": "/static/css/2.f681e662.chunk.css"
   },
   {
-    "revision": "98526db1871e57922f3d",
+    "revision": "eb2803d000016b5afabd",
     "url": "/static/css/main.d590a9be.chunk.css"
   },
   {
-    "revision": "0c583e3011070f548501",
-    "url": "/static/js/2.57ca16e6.chunk.js"
+    "revision": "809f998016b223da6ad4",
+    "url": "/static/js/2.b75bb949.chunk.js"
   },
   {
     "revision": "6ee92724352c4819f745f2defade0e20",
-    "url": "/static/js/2.57ca16e6.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.b75bb949.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "98526db1871e57922f3d",
-    "url": "/static/js/main.40e0e20a.chunk.js"
+    "revision": "eb2803d000016b5afabd",
+    "url": "/static/js/main.f4aa048d.chunk.js"
   },
   {
     "revision": "6f6fad05ee38bf1a85b4",
@@ -42,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6db494f0a7787e1813227e7d79b9cdbb",
     "url": "/static/media/alex-silly.6db494f0.jpg"
+  },
+  {
+    "revision": "1d25c63d56be9f85a0ee5cb51df0b057",
+    "url": "/static/media/csci100-website.1d25c63d.png"
   },
   {
     "revision": "16b7edd43f3b8fd4f64f94adf52c9811",
@@ -114,6 +118,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a6e4869617344d152a2ce61502101736",
     "url": "/static/media/kernel-discussion-img.a6e48696.png"
+  },
+  {
+    "revision": "ea47e1222b6e4cffd6b1e9f90afdda9f",
+    "url": "/static/media/krentsel-website.ea47e122.png"
   },
   {
     "revision": "c056b72b419a82e3b19f9993e518d5e2",
