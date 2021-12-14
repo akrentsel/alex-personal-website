@@ -2,6 +2,9 @@ import React from "react";
 import DocumentTitle from 'react-document-title';
 import 'assets/css/music.css';
 
+// TODO(akrentsel): Considering adding info about the masterclasses I've been in.
+// Also perhaps finding info about the Cal Performances Takacs documentary?
+
 const Music = () => (
     <DocumentTitle title='Music'>
       <article className="post">
@@ -14,6 +17,16 @@ const Music = () => (
         I played bassoon for a year, saxaphone for two years, and a bit of piano,
         but ultimately violin was the instrument for me. I am very grateful for the
         wonderful teachers I've gotten to study with: <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Vaghy_String_Quartet">Dezso Vaghy</a>, Peter McHugh, and <a target="_blank" rel="noopener noreferrer" href="https://music.berkeley.edu/people/dan-flanagan-2/">Dan Flanagan</a>.</p>
+		<p>
+			You're likely to find me playing in an orchestra wherever I'm living. Most recently, I've played in...
+			<ul>
+				<li>Howard University Orchestra, Fall 2021</li>
+				<li>Googler Orchestra, Fall 2019 - Present</li>
+				<li>UC Berkeley Symphony Orchestra, Fall 2015 - Spring 2019</li>
+				<li>Youth Performing Arts School, Fall 2013 - Spring 2015</li>
+				<li>Louisville Youth Orchestra, Spring 2015</li>
+			</ul>
+		</p>
         <p>Below is a selection of recordings of solo, chamber, and symphonic works I've performed.</p>
         <section>
 			<div className="mini-posts">

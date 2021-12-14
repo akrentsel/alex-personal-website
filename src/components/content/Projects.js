@@ -37,7 +37,7 @@ const Projects = () => (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://chrome.google.com/webstore/detail/slash-searchbar-shortcuts/hfdmjgkekkjdpabmbpjbpeijfhfdeacp"
+          href="/"
           className="image"
         >
           <img height="400" src={WebsitePic} alt="" />
