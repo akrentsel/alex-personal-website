@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PostList from "components/blog/PostList.js";
 
 const Welcome = () => (
   <article className="post">
@@ -8,16 +9,8 @@ const Welcome = () => (
         <h2>Welcome to my website</h2>
       </div>
     </header>
-    <p>
-      Thanks for stopping by. This webpage is home to my{" "}
-      <Link to="/about">info about me and my life/career timeline</Link>, my{" "}
-      <Link to="/posts">miscellaneous musings</Link>,{" "}
-      <Link to="/music">violin performance recordings</Link>,{" "}
-      <Link to="/teaching">teaching materials I've produced</Link>, past{" "}
-      <Link to="/projects">projects I've worked on</Link>, and my{" "}
-      <Link to="/contact">contact info</Link>.
-    </p>
-    <p>Feel free to take a look around!</p>
+    <p>Thanks for stopping by internet home. Take a look around the tabs above. Or check out some of my featured posts below:</p>
+    <PostList featured/>
   </article>
 );
 
