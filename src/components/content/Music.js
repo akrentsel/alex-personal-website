@@ -41,10 +41,10 @@ const Music = () => (
 				<article className="mini-post">
 					<header>
 						<h3>Brahms Scherzo in C Minor, "Sonatensatz"</h3>
-						<time className="published" dateTime="">UC Berkeley Senior Recital</time>
+						<time className="published" dateTime="">UC Berkeley Noon Concert</time>
 						<a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
 					</header>
-					<iframe title="Brahms Scherzo in C Minor, Sonatensatz" src="https://www.youtube.com/embed/n9A7k26YRVs" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+					<iframe title="Brahms Scherzo in C Minor, Sonatensatz" src="https://www.youtube.com/embed/BdPG-LcNGOw" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 				</article>
 
 				<article className="mini-post">
@@ -77,10 +77,10 @@ const Music = () => (
 				<article className="mini-post">
 					<header>
 					<h3>Beethoven "Spring" Sonata in F Major, Op. 24</h3>
-					<time className="published" dateTime="">UC Berkeley Senior Recital</time>
+					<time className="published" dateTime="">UC Berkeley Noon Concert</time>
 					<a href="#" className="author"><img src="images/avatar.jpg" alt="" /></a>
 					</header>
-					<iframe title="Beethoven Spring Sonata in F Major, Op. 24" src="https://www.youtube.com/embed/CeHkgn7e5Mo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<iframe title="Beethoven Spring Sonata in F Major, Op. 24" src="https://www.youtube.com/embed/7YLEnRD0VDQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</article>
 			</div>
 		</section>
