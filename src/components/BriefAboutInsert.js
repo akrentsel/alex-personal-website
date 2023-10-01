@@ -31,7 +31,7 @@ const BriefAboutInsert = () => (
     <section>
       <h3>Brief About</h3>
       <p>
-        Hi! I'm Alex, a Computer Science Ph.D. student at UC Berkeley and Systems Research Engineer in the{" "}
+        Hi! I'm Alex, a Computer Science Ph.D. student at UC Berkeley and a researcher in the{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"

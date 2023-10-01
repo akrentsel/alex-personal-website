@@ -16,6 +16,17 @@ const Teaching = () => (
             <h2>Teaching</h2>
           </div>
         </header>
+
+        <h3>AddisCoder</h3>
+        <p>
+        In July 2023, I lectured the <a target="_blank" rel="noopener noreferrer" href="https://www.addiscoder.com/#staff">AddisCoder</a> Intro to Computer Science course for one of four weeks in Addis Ababa, Ethiopia.
+        I taught 100 students aged 15-17 with <a target="_blank" rel="noopener noreferrer" href="https://www.addiscoder.com/#staff">a wonderful TA staff of 19</a>, and was responsible for writing and teaching 15 hours of lectures, and overseeing lab material development. 
+
+        You can find my <a target="_blank" rel="noopener noreferrer" href="https://www.addiscoder.com/syllabus/2023/">teaching materials (week 2)</a> and <a target="_blank" rel="noopener noreferrer" href="https://www.krentsel.com/posts/reflections-teaching-cs-ethiopia">relections from the experience</a> published online.
+        {/* My teaching materials are availabe under the <a target="_blank" rel="noopener noreferrer" href="https://www.addiscoder.com/syllabus/2023/">Week 2 heading here</a>, and my reflections from the
+        experience are written up <a target="_blank" rel="noopener noreferrer" href="https://www.krentsel.com/posts/reflections-teaching-cs-ethiopia">here</a>
+        </img> */}
+        </p>
         <h3>Howard University</h3>
         <p>
           For Fall 2021, I was on faculty at <a target="_blank" rel="noopener noreferrer" href="https://www.howard.edu/">Howard University</a> as{" "}
@@ -45,13 +56,14 @@ const Teaching = () => (
         code, so she took the course with me in Spring 2021.
         </p>
         <h3>UC Berkeley</h3>
-        <p>While at UC Berkeley, I worked as a TA for 5 semesters, teaching
+        <p>While at UC Berkeley, I worked as a TA for 6 semesters, teaching
         <ul style={{listStylePosition: "inside"}}>
           <li><a target="_blank" rel="noopener noreferrer" href="https://inst.eecs.berkeley.edu/~ee16a/fa16/">EE16A: Introduction to Electrical Engineering</a>, Fall 2016</li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://inst.eecs.berkeley.edu/~ee16a/sp17/">EE16A: Introduction to Electrical Engineering</a>, Spring 2017</li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://sp18.datastructur.es/">CS61B: Data Structures and Algorithms</a>, Spring 2018</li>
-          <li><a target="_blank" rel="noopener noreferrer" href="http://cs168.io/">CS168: Internet Architecture</a>, Fall 2018</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://cs168.io/">CS168: Internet Architecture</a>, Fall 2018</li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://people.eecs.berkeley.edu/~jrs/189s19/">CS189/CS289: Machine Learning</a>, Spring 2019</li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://cs168.io/">CS168: Internet Architecture</a>, Fall 2022</li>
         </ul>
         As a TA, I taught discussion sections of 20-40 students, wrote discussion sheets, wrote exams, wrote homeworks, graded exams, held office hours, and proctored exams.
         </p>
