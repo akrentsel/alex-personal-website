@@ -3,10 +3,6 @@ import DocumentTitle from "react-document-title";
 import PostList from "components/blog/PostList";
 
 class Posts extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <DocumentTitle title="Posts">

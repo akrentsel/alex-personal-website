@@ -14,6 +14,26 @@ const STATUS_ERROR = 3;
 // data isn't returned yet.
 const GRACE_PERIOD_MS = 750;
 
+// Custom Renderer is used to set the max width of images to a percent of their container.
+const renderers = {
+  // TODO(akrentsel): Consider extending support to sending a maximum height that is passed in through the title.
+  // I can parse the title as a JSON object containing an explicit max width and max height, and use those values
+  // here if they are set instead.
+  image: ({ alt, src, title }) => (
+    <div style={{ textAlign: 'center' }}>
+      <figure style={{ display: 'inline-block', maxWidth: '85%' }}>
+        <img
+          alt={alt}
+          src={src}
+          title={title}
+          style={{ maxWidth: '100%' }}
+        />
+        <figcaption style={{ fontStyle: 'italic' }}>{alt}</figcaption>
+      </figure>
+    </div>
+  ),
+};
+
 class Post extends React.Component {
   constructor(props) {
     super(props);
@@ -32,7 +52,7 @@ class Post extends React.Component {
   }
 
   getPostDetails(postPath) {
-    var request = fetch(
+    fetch(
       "https://325ab2lcl4.execute-api.us-east-1.amazonaws.com/default/posts?postPath=" +
         postPath,
       {
@@ -41,9 +61,7 @@ class Post extends React.Component {
           "Content-Type": "application/json"
         }
       }
-    )
-      .then(response => response.json())
-      .then(data => {
+    ).then(response => response.json()).then(data => {
         if (data.length === 0) {
           this.setState({ dataStatus: STATUS_NONEXISTANT });
           return;
@@ -83,6 +101,7 @@ class Post extends React.Component {
               <ReactMarkdown
                 plugins={[gfm]}
                 children={this.state.markdownContent}
+                renderers={renderers}
               />
             </section>
           </>
@@ -91,6 +110,8 @@ class Post extends React.Component {
         return <p>Post not found, please double check the link.</p>;
       case STATUS_ERROR:
         return <p>Error response from server, try again later.</p>;
+      default:
+        return <p>Unknown error, please try again later.</p>;
     }
   }
 
@@ -108,6 +129,9 @@ class Post extends React.Component {
         break;
       case STATUS_ERROR:
         title = "Error";
+        break;
+      default:
+        title = "Unknown Error";
         break;
     }
     return (
