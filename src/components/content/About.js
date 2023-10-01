@@ -192,6 +192,19 @@ class About extends React.Component {
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="timeline-element-custom"
+                date="Fall 2022"
+                iconStyle={{ background: 'rgb(236, 181, 73)', color: '#133C76' }}
+                icon={<TimelineIcon iconClass="fas fa-university"/>}
+              >
+                <h3 className="vertical-timeline-element-subtitle"><a target="_blank" rel="noopener noreferrer" href="https://www.berkeley.edu/">UC Berkeley</a></h3>
+                <h4 className="vertical-timeline-element-subtitle">Started PhD</h4>
+                <p>
+                  PhD work focused on networking, internet architecture, and systems.<br/><br/>
+                  Advised by <a target="_blank" rel="noopener noreferrer" href="https://www2.eecs.berkeley.edu/Faculty/Homepages/shenker.html">Scott Shenker</a> and <a target="_blank" rel="noopener noreferrer" href="https://www2.eecs.berkeley.edu/Faculty/Homepages/ratnasamy.html">Sylvia Ratnasamy</a> in the <a target="_blank" rel="noopener noreferrer" href="https://netsys.cs.berkeley.edu/">NetSys group</a>, funded by an <a target="_blank" rel="noopener noreferrer" href="https://www.nsf.gov/cise/CSGrad4US/">NSF CSGrad4US Fellowship</a>.
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="timeline-element-custom"
                 date={this.state.viewerTimestamp}
                 iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                 icon={<TimelineIcon iconClass="fas fa-user"/>}

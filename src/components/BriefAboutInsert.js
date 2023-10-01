@@ -31,8 +31,7 @@ const BriefAboutInsert = () => (
     <section>
       <h3>Brief About</h3>
       <p>
-        Hi! I'm Alex. I graduated from UC Berkeley with a B.S. in EECS and a
-        B.A. in Music. I work as a Systems Research Engineer in the{" "}
+        Hi! I'm Alex, a Computer Science Ph.D. student at UC Berkeley and Systems Research Engineer in the{" "}
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -40,7 +39,7 @@ const BriefAboutInsert = () => (
         >
           Systems Research Group at Google
         </a>
-        . I enjoy traveling, playing violin, and teaching. I've previously
+        . My research interests lie in networking, internet architecture, and systems. I enjoy traveling, playing violin, and teaching. I've previously
         worked at{" "}
         <a
           target="_blank"
