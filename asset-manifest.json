@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.d590a9be.chunk.css",
-    "main.js": "/static/js/main.7404e41b.chunk.js",
-    "main.js.map": "/static/js/main.7404e41b.chunk.js.map",
+    "main.js": "/static/js/main.c9e989a2.chunk.js",
+    "main.js.map": "/static/js/main.c9e989a2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c58b31e3.js",
     "runtime-main.js.map": "/static/js/runtime-main.c58b31e3.js.map",
     "static/css/2.f681e662.chunk.css": "/static/css/2.f681e662.chunk.css",
     "static/js/2.2f01964b.chunk.js": "/static/js/2.2f01964b.chunk.js",
     "static/js/2.2f01964b.chunk.js.map": "/static/js/2.2f01964b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.dfba3331a4822ea21df7a656a7e50f80.js": "/precache-manifest.dfba3331a4822ea21df7a656a7e50f80.js",
+    "precache-manifest.93e30a175dee0ecab84c61987253da30.js": "/precache-manifest.93e30a175dee0ecab84c61987253da30.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.f681e662.chunk.css.map": "/static/css/2.f681e662.chunk.css.map",
     "static/css/main.d590a9be.chunk.css.map": "/static/css/main.d590a9be.chunk.css.map",
@@ -20,7 +20,6 @@
     "static/media/alex-silly.jpg": "/static/media/alex-silly.6db494f0.jpg",
     "static/media/csci100-website.png": "/static/media/csci100-website.1d25c63d.png",
     "static/media/dis10-sol.pdf": "/static/media/dis10-sol.16b7edd4.pdf",
-    "static/media/berkeley-10-year-journey.pdf": "/static/media/berkeley-10-year-journey.pdf",
     "static/media/entropy-walkthrough-cs189.png": "/static/media/entropy-walkthrough-cs189.46b9391b.png",
     "static/media/main.css": "/static/media/fa-solid-900.ef3df984.eot",
     "static/media/kernel-discussion-img.png": "/static/media/kernel-discussion-img.a6e48696.png",
@@ -33,6 +32,6 @@
     "static/css/2.f681e662.chunk.css",
     "static/js/2.2f01964b.chunk.js",
     "static/css/main.d590a9be.chunk.css",
-    "static/js/main.7404e41b.chunk.js"
+    "static/js/main.c9e989a2.chunk.js"
   ]
 }
