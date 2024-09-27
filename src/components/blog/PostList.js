@@ -1,6 +1,7 @@
 import React from "react";
 import MiniPost from "components/blog/MiniPost.js";
 import FadeIn from "react-fade-in";
+import { Link } from "react-router-dom";
 
 const STATUS_WAITING = 0;
 const STATUS_READY = 1;
@@ -9,6 +10,9 @@ const STATUS_ERROR = 2;
 // This is the number of ms until "Loading..." will appear on the screen, if
 // data isn't returned yet.
 const GRACE_PERIOD_MS = 750;
+
+// Number of featured posts to display
+const NUM_FEATURED = 6;
 
 class PostList extends React.Component {
   constructor(props) {
@@ -57,22 +61,33 @@ class PostList extends React.Component {
   render() {
     switch (this.state.dataStatus) {
       case STATUS_READY:
+        const displayPosts = this.state.featured
+          ? this.state.postList.slice(0, NUM_FEATURED)
+          : this.state.postList;
         return (
-          <ul>
-            <FadeIn>
-              {this.state.postList.map((post, index) => (
-                <li>
-                  <MiniPost
-                    key={post.postPath}
-                    title={post.title}
-                    author={post.author}
-                    postPath={post.postPath}
-                    publishDate={post.publishDate}
-                  />
-                </li>
-              ))}
-            </FadeIn>
-          </ul>
+          <>
+            <ul>
+              <FadeIn>
+                {displayPosts.map((post, index) => (
+                  <li key={post.postPath}>
+                    <MiniPost
+                      title={post.title}
+                      author={post.author}
+                      postPath={post.postPath}
+                      publishDate={post.publishDate}
+                    />
+                  </li>
+                ))}
+                {this.state.featured && (
+                  <li>
+                    <p>
+                      See more: <Link to="/posts">...all posts</Link>
+                    </p>
+                  </li>
+                )}
+              </FadeIn>
+            </ul>
+          </>
         );
       case STATUS_WAITING:
         return <p>{this.state.gracePeriod ? "" : "Loading..."}</p>;
